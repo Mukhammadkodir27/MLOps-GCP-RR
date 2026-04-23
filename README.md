@@ -13,7 +13,7 @@
 
 ---
 
-## ❓ Research Question
+## Research Question
 
 **Can we accurately predict residential property prices in Dubai using structured real estate transaction data, and can a generative AI layer translate these predictions into natural, human-readable insights for end users?**
 
@@ -24,7 +24,7 @@ Secondary questions:
 
 ---
 
-## 📊 Data Source
+## Data Source
 
 - **Source:** Dubai Land Department (DLD) — publicly available real estate transaction records
 - **Coverage:** Historical property sales across Dubai's major districts
@@ -33,7 +33,7 @@ Secondary questions:
 
 ---
 
-## 🎯 Motivation
+## Motivation
 
 Dubai's real estate market is one of the most dynamic and opaque property markets globally, with prices varying dramatically across neighborhoods, property types, and even building floors. Buyers, investors, and analysts often lack accessible tools to estimate fair market value without expert consultation.
 
@@ -41,7 +41,7 @@ This project tackles that gap by building a high-precision ML regression system 
 
 ---
 
-## 🔬 Planned Approach
+## Planned Approach
 
 ### 1. Data Preparation
 - Data cleaning, type normalization, and missing value treatment
@@ -72,7 +72,7 @@ This project tackles that gap by building a high-precision ML regression system 
 
 ---
 
-## 🛠️ Language & Tools
+## Language & Tools
 
 | Category | Tools |
 |----------|-------|
@@ -89,7 +89,7 @@ This project tackles that gap by building a high-precision ML regression system 
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
@@ -137,7 +137,7 @@ dubai-realestate-prediction/
 
 ---
 
-## 🔄 Reproducibility
+## Reproducibility
 
 To reproduce this project:
 
@@ -164,7 +164,7 @@ docker run -p 8000:8000 dubai-ml
 
 ---
 
-## 📌 Status
+## Status
 
 - [x] Initial ML pipeline (Azure — previous version)
 - [x] Stacked ensemble model with feature engineering
