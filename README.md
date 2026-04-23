@@ -1,4 +1,5 @@
 # 🇦🇪 UAE Real Estate Price Prediction Platform
+Link: https://mukhammadkodir-real-estate.streamlit.app/
 ### Reproducible Research Project — End-to-End ML & Generative AI System
 
 ---
