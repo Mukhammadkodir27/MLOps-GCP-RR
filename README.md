@@ -1,4 +1,4 @@
-# 🏙️ Dubai Real Estate Price Prediction Platform
+# 🇦🇪 UAE Real Estate Price Prediction Platform
 ### Reproducible Research Project — End-to-End ML & Generative AI System
 
 ---
