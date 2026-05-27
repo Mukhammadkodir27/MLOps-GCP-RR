@@ -167,6 +167,55 @@ df_train %>%
   theme_minimal()
 ```
 
+## 3.4c Parking Spaces vs Price
+
+```{r eda-parking, fig.height=5}
+df_train %>%
+  mutate(parking_capped = ifelse(total_parking_spaces > 5, "6+", as.character(total_parking_spaces))) %>%
+  ggplot(aes(x = factor(parking_capped, levels = c(as.character(0:5), "6+")), y = price_log1p)) +
+  geom_violin(fill = "#fa9fb5", alpha = .7) +
+  geom_boxplot(width = .1, outlier.size = .5) +
+  labs(title = "log1p(Price) by Parking Spaces", x = "Parking Spaces", y = "log1p(Price)") +
+  theme_minimal()
+```
+
+## 3.4d Furnishing Status vs Price
+
+```{r eda-furnish, fig.height=5}
+df_train %>%
+  mutate(Furnishing = ifelse(furnishing_Unfurnished == TRUE, "Unfurnished", "Furnished")) %>%
+  ggplot(aes(x = Furnishing, y = price_log1p, fill = Furnishing)) +
+  geom_violin(alpha = .7, show.legend = FALSE) +
+  geom_boxplot(width = .1, outlier.size = .5, show.legend = FALSE) +
+  scale_fill_manual(values = c("Furnished" = "#a1d99b", "Unfurnished" = "#bdbdbd")) +
+  labs(title = "log1p(Price) by Furnishing Status", x = "Status", y = "log1p(Price)") +
+  theme_minimal()
+```
+
+## 3.4e Completion Status vs Price
+
+```{r eda-completion, fig.height=5}
+df_train %>%
+  mutate(Status = ifelse(completion_status_Ready == TRUE, "Ready", "Off-Plan")) %>%
+  ggplot(aes(x = Status, y = price_log1p, fill = Status)) +
+  geom_violin(alpha = .7, show.legend = FALSE) +
+  geom_boxplot(width = .1, outlier.size = .5, show.legend = FALSE) +
+  scale_fill_manual(values = c("Ready" = "#9ecae1", "Off-Plan" = "#fdae6b")) +
+  labs(title = "log1p(Price) by Completion Status", x = "Status", y = "log1p(Price)") +
+  theme_minimal()
+```
+
+## 3.4f Quarter vs Price
+
+```{r eda-quarter, fig.height=5}
+df_train %>%
+  ggplot(aes(x = factor(quarter), y = price_log1p)) +
+  geom_violin(fill = "#dadaeb", alpha = .7) +
+  geom_boxplot(width = .1, outlier.size = .5) +
+  labs(title = "log1p(Price) by Transaction Quarter", x = "Quarter", y = "log1p(Price)") +
+  theme_minimal()
+```
+
 ## 3.5 Geographic spread
 
 ```{r eda-geo, fig.height=5}
