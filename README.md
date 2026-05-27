@@ -7,7 +7,7 @@ This project is a reproduction of the UAE Property Valuator machine learning pip
 
 ---
 
-## 🎯 Project Scope and Goals
+##  Project Scope and Goals
 
 The primary goal was to validate the reproducibility of the original Python-based ML results using the R programming ecosystem. 
 
@@ -23,7 +23,7 @@ The primary goal was to validate the reproducibility of the original Python-base
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 The key files for this R reproduction can be found in the `Notebooks` directory:
 
@@ -41,7 +41,7 @@ Google-MLOps-UAE/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - R (version 4.0 or higher recommended)
@@ -66,7 +66,7 @@ Google-MLOps-UAE/
 
 ---
 
-## 🧠 Machine Learning Pipeline in R
+##  Machine Learning Pipeline in R
 
 The reproduced pipeline follows these steps:
 1. **Data Loading:** Reads pre-processed `.parquet` files using the `arrow` package.
@@ -78,6 +78,6 @@ The reproduced pipeline follows these steps:
 
 ---
 
-## 🛡️ Acknowledgements
+##  Acknowledgements
 
 This reproducibility project was developed for educational purposes to demonstrate cross-language ML pipeline recreation. The original Python architecture and this R reproduction both showcase the robustness of modern open-source data science tools.
