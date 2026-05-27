@@ -22,9 +22,9 @@ knitr::opts_chunk$set(
   fig.height = 6
 )
 ```
-
-
-
+> [!IMPORTANT]
+> **Notice Board: Hardware Constraints**
+> Due to the lack of GPU availability in this environment, model training strictly utilizes the CPU. To maintain reasonable execution times, the hyperparameter grids for our models (Random Forest, XGBoost, LightGBM) have been simplified compared to the advanced Python version. While this limits peak model performance slightly, the underlying ML pipeline structure remains fully reproducible and robust.
 ---
 
 ---
